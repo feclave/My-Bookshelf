@@ -16,6 +16,10 @@ Sistema completo para gerenciamento de livros com CRUD, frontend em React e back
 - NPM 9+ ou Yarn
 - Git (opcional)
 
+## Links Úteis de Gestão do Projeto
+ Trello - { https://trello.com/b/otSNx0gx/gerenciador-de-livros-api-rest-react }
+GitHub - { https://github.com/feclave/My-Bookshelf }
+
 ## 🚀 Instalação e Execução
 
 ### 1. Configuração Inicial
@@ -74,18 +78,26 @@ Exemplo de corpo para POST/PUT:
 
 
 📂 ESTRUTURA DO PROJETO 
-book-manager/
+ MY-BOOKSHELF
 ├── backend/
-│   ├── models/          # Modelos MongoDB
-│   ├── routes/          # Rotas da API
-│   ├── .env             # Configurações
-│   ├── server.js        # Servidor principal
-│   └── package.json
+│   ├── src/            # Modelos MongoDB e rotas da API
+│   ├── .gitignore      # Arquivos ignorados pelo Git
+│   ├── server.js       # Servidor principal
+│   ├── package.json    # Dependências do backend
+│   └── package-lock.json
 └── frontend/
-    ├── public/          # Assets estáticos
     ├── src/
-    │   ├── components/  # Componentes React
-    │   ├── pages/       # Views da aplicação
-    │   ├── services/    # API calls
-    │   └── App.js       # Componente raiz
-    └── package.json
+    │   ├── components/ # Componentes React 
+    │   ├── pages/      # Views da aplicação 
+    │   ├── services/   # Chamadas à API 
+    │   └── App.js      # Componente raiz 
+    ├── .gitignore      # Arquivos ignorados pelo Git
+    ├── index.html      # Página inicial
+    ├── package.json   # Dependências do frontend
+    ├── package-lock.json
+    ├── eslint.config.js # Configurações ESLint
+    └── vite.config.js  # Configuração do Vite
+├── pictures/          # Imagens do projeto
+├── info.md            # Informações adicionais
+├── .env               # Arquivo com variáveis de segurança
+└── README.md          # Documentação principal
