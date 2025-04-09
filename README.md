@@ -9,6 +9,11 @@ Sistema completo para gerenciamento de livros com CRUD, frontend em React e back
 - **Banco de Dados**: MongoDB
 - **Ferramentas**: Postman, Mongoose
 
+## 🧍 Integrantes
+Allan Pradella Frushio - RA: 10415355
+Eduardo Alexandre Rodrigues - RA: 10415254
+Felipe Jost Clavé - RA: 10415280
+
 ## ⚙️ Pré-requisitos
 
 - Node.js v18+
