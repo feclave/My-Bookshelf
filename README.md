@@ -38,7 +38,6 @@ npm install
 ### Backend
 
 1. Navegue até a pasta backend:
-```bash
 cd backend
 
 2. Adicionar o arquivo .env com as variáveis e parâmetros necessários para conexão com o banco de dados.
@@ -60,6 +59,7 @@ cd frontend
 
 2. Instale as dependências:
 npm install
+npm install vite --save-dev
 
 3. Inicie o aplicativo: 
 npm run dev
