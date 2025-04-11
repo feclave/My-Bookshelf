@@ -85,24 +85,34 @@ Exemplo de corpo para POST/PUT:
   "pages": 256
 }
 
-### 📂 Estrutura do Projeto
-MY-BOOKSHELF/
-├── backend/
-│   ├── src/            # Modelos MongoDB e rotas da API
-│   ├── .gitignore
-│   ├── server.js       # Servidor principal
-│   ├── package.json
-│   └── package-lock.json
-├── frontend/
+## 📂 Estrutura do Projeto
+
+```text
+my-bookshelf/
+│
+├── backend/                   # Pasta do servidor Node.js
+│   ├── src/                   # Código fonte do backend
+│   │   ├── controllers/       # Lógica dos endpoints
+│   │   ├── models/            # Modelos do MongoDB
+│   │   ├── routes/            # Definição de rotas
+│   │   └── utils/             # Utilitários e helpers
+│   ├── .env                   # Variáveis de ambiente
+│   ├── server.js              # Ponto de entrada do servidor
+│   └── package.json           # Dependências do backend
+│
+├── frontend/                  # Pasta da aplicação React
 │   ├── src/
-│   │   ├── components/ # Componentes React
-│   │   ├── pages/      # Views da aplicação
-│   │   ├── services/   # Chamadas à API
-│   │   └── App.js      # Componente raiz
-│   ├── .gitignore
+│   │   ├── assets/            # Imagens, fonts, etc
+│   │   ├── components/        # Componentes reutilizáveis
+│   │   ├── pages/             # Páginas/views da aplicação
+│   │   ├── services/          # Integração com a API
+│   │   ├── styles/            # Arquivos de estilização
+│   │   ├── App.jsx            # Componente raiz
+│   │   └── main.jsx           # Ponto de entrada
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
-├── pictures/          # Imagens do projeto
-├── .env               # Variáveis de ambiente
-└── README.md          # Este arquivo
+│
+├── .gitignore
+└── README.md                  # Documentação principal
+```
