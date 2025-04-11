@@ -67,8 +67,9 @@ Instale as dependências e inicie:
 npm install
 npm install vite --save-dev
 npm run dev
+```
 
-🌐 Endpoints da API
+### 🌐 Endpoints da API
 Método	Endpoint	Descrição
 GET	/books	Lista todos os livros
 POST	/books	Adiciona novo livro
@@ -84,7 +85,7 @@ Exemplo de corpo para POST/PUT:
   "pages": 256
 }
 
-📂 Estrutura do Projeto
+### 📂 Estrutura do Projeto
 MY-BOOKSHELF/
 ├── backend/
 │   ├── src/            # Modelos MongoDB e rotas da API
