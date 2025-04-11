@@ -78,12 +78,14 @@ PUT	/books/:id	Atualiza um livro
 DELETE	/books/:id	Remove um livro
 
 Exemplo de corpo para POST/PUT:
+```text
 {
   "title": "Dom Casmurro",
   "author": "Machado de Assis",
   "year": 1899,
   "pages": 256
 }
+```
 
 ## 📂 Estrutura do Projeto
 
