@@ -36,6 +36,7 @@ Sistema completo para gerenciamento de livros com CRUD, frontend em React e back
 
 - [Trello](https://trello.com/b/otSNx0gx/gerenciador-de-livros-api-rest-react)  
 - [GitHub](https://github.com/feclave/My-Bookshelf)  
+- [UnitTestScript] (https://docs.google.com/spreadsheets/d/1XSuGE6N5h_gqhlCCpTnb7ZDzekRAo0p3Y6hms8IVDb0/edit?usp=sharing)
 
 ## 🚀 Instalação e Execução
 
