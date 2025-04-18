@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const booksAPI = axios.create({baseURL: "http://localhost:3000/books"})
+const booksAPI = axios.create({baseURL: "https://my-bookshelf-uobo.onrender.com"})
 
 async function getBooks( search = "") {
     const response = await booksAPI.get("/", { params: { search } });
