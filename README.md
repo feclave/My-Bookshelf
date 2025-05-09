@@ -118,4 +118,6 @@ my-bookshelf/
 │
 ├── .gitignore
 └── README.md                  # Documentação principal
+
+## Iteração 2: Ajustes de teste
 ```

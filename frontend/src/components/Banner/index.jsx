@@ -40,3 +40,5 @@ function Banner() {
 }
 
 export default Banner
+
+// Modificação feita para a Iteração 2
