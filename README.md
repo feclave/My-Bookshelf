@@ -1,85 +1,72 @@
 # 📚 Gerenciador de Livros - API REST + React
+**Versão: Iteração 2 (v2)**
 
 Sistema completo para gerenciamento de livros com CRUD, frontend em React e backend Node.js/Express conectado ao MongoDB.
 
 ## 🛠️ Tecnologias Utilizadas
-
-**Frontend**:  
-- React.js  
-- Vite  
-
-**Backend**:  
-- Node.js  
-- Express  
-
-**Banco de Dados**:  
-- MongoDB  
-- Mongoose  
-
-**Ferramentas**:  
-- Postman  
+**Frontend**:
+- React.js
+- Vite
+**Backend**:
+- Node.js
+- Express
+**Banco de Dados**:
+- MongoDB
+- Mongoose
+**Ferramentas**:
+- Postman
 
 ## 👥 Integrantes
-
-- Allan Pradella Frushio - RA: 10415355  
-- Eduardo Alexandre Rodrigues - RA: 10415254  
-- Felipe Jost Clavé - RA: 10415280  
+- Allan Pradella Frushio - RA: 10415355
+- Eduardo Alexandre Rodrigues - RA: 10415254
+- Felipe Jost Clavé - RA: 10415280
 
 ## ⚙️ Pré-requisitos
-
-- Node.js v18+  
-- MongoDB Atlas ou local  
-- NPM 9+ ou Yarn  
-- Git (opcional)  
+- Node.js v18+
+- MongoDB Atlas ou local
+- NPM 9+ ou Yarn
+- Git (opcional)
 
 ## 🔗 Links Úteis
-
-- [Trello](https://trello.com/b/otSNx0gx/gerenciador-de-livros-api-rest-react)  
-- [GitHub](https://github.com/feclave/My-Bookshelf)  
-- [UnitTestScript] (https://docs.google.com/spreadsheets/d/1XSuGE6N5h_gqhlCCpTnb7ZDzekRAo0p3Y6hms8IVDb0/edit?usp=sharing)
+- [Trello](https://trello.com/b/otSNx0gx/gerenciador-de-livros-api-rest-react)
+- [GitHub](https://github.com/feclave/My-Bookshelf)
+- [Roteiro de Testes (Postman)](https://docs.google.com/spreadsheets/d/1XSuGE6N5h_gqhlCCpTnb7ZDzekRAo0p3Y6hms8IVDb0/edit?usp=sharing)
 
 ## 🚀 Instalação e Execução
-
-### Configuração Inicial
-
-Clone o repositório:
-
+### 1. Clone o repositório
 ```bash
 git clone https://github.com/feclave/My-Bookshelf.git
 cd My-Bookshelf
-
-Backend
-Navegue até a pasta backend:
+```
+### 2. Backend
+```bash
 cd backend
-
-Crie o arquivo .env com:
+# Crie o arquivo .env com as variáveis abaixo:
 MONGO_URI=sua_uri_de_conexao_mongodb
 PORT=5000
-
-Instale as dependências e inicie:
+# Instale as dependências e inicie
 npm install
 npm start
-
-Frontend
-Navegue até a pasta frontend:
+```
+### 3. Frontend
+```bash
 cd ../frontend
-
-Instale as dependências e inicie:
 npm install
 npm install vite --save-dev
 npm run dev
 ```
 
-### 🌐 Endpoints da API
-Método	Endpoint	Descrição
-GET	/books	Lista todos os livros
-POST	/books	Adiciona novo livro
-GET	/books/:id	Obtém um livro específico
-PUT	/books/:id	Atualiza um livro
-DELETE	/books/:id	Remove um livro
+## 🌐 Endpoints da API
+| Método | Endpoint    | Descrição             |
+|--------|-------------|------------------------|
+| GET    | /books      | Lista todos os livros |
+| POST   | /books      | Adiciona novo livro   |
+| GET    | /books/:id  | Obtém um livro específico |
+| PUT    | /books/:id  | Atualiza um livro     |
+| DELETE | /books/:id  | Remove um livro       |
 
-Exemplo de corpo para POST/PUT:
-```text
+### 📦 Exemplo de corpo para POST/PUT
+```json
 {
   "title": "Dom Casmurro",
   "author": "Machado de Assis",
@@ -88,36 +75,39 @@ Exemplo de corpo para POST/PUT:
 }
 ```
 
-## 📂 Estrutura do Projeto
+## 🧪 Testes
+Você pode testar os endpoints da API com o [Postman](https://www.postman.com/). Um roteiro de testes está disponível no link abaixo:
+📄 [Roteiro de Testes](https://docs.google.com/spreadsheets/d/1XSuGE6N5h_gqhlCCpTnb7ZDzekRAo0p3Y6hms8IVDb0/edit?usp=sharing)
 
+## 📂 Estrutura do Projeto
 ```text
 my-bookshelf/
-│
-├── backend/                   # Pasta do servidor Node.js
-│   ├── src/                   # Código fonte do backend
-│   │   ├── controllers/       # Lógica dos endpoints
-│   │   ├── models/            # Modelos do MongoDB
-│   │   ├── routes/            # Definição de rotas
-│   │   └── utils/             # Utilitários e helpers
-│   ├── .env                   # Variáveis de ambiente
-│   ├── server.js              # Ponto de entrada do servidor
-│   └── package.json           # Dependências do backend
-│
-├── frontend/                  # Pasta da aplicação React
+├── backend/
 │   ├── src/
-│   │   ├── assets/            # Imagens, fonts, etc
-│   │   ├── components/        # Componentes reutilizáveis
-│   │   ├── pages/             # Páginas/views da aplicação
-│   │   ├── services/          # Integração com a API
-│   │   ├── styles/            # Arquivos de estilização
-│   │   ├── App.jsx            # Componente raiz
-│   │   └── main.jsx           # Ponto de entrada
+│   │   ├── controllers/
+│   │   ├── models/
+│   │   ├── routes/
+│   │   └── utils/
+│   ├── .env
+│   ├── server.js
+│   └── package.json
+├── frontend/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── styles/
+│   │   ├── App.jsx
+│   │   └── main.jsx
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
-│
 ├── .gitignore
-└── README.md                  # Documentação principal
-
-## Iteração 2: Ajustes de teste
+└── README.md
 ```
+
+## 🧩 Iteração 2: Ajustes de teste
+- Adicionado comentário no componente `Banner` (frontend);
+- Adição de nota no `README.md` para indicar alterações;
+- Criação da tag `v2` no repositório.
